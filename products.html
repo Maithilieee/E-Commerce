@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - StyleHub</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================================
+       NAVIGATION BAR - Consistent across all pages
+  ================================ -->
+  <header class="navbar" id="navbar">
+    <h1 class="logo" onclick="window.location.href='index.html'">StyleHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html" class="cart-badge">
+        Cart 🛒
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ================================
+       PRODUCTS SECTION - Main shopping area
+  ================================ -->
+  <section class="product-section">
+    <h2>All Products</h2>
+    
+    <!-- SEARCH BAR - Real-time product search -->
+    <div class="search-container">
+      <input type="text" id="search" placeholder="🔍 Search for products...">
+    </div>
+
+    <!-- FILTER BUTTONS - Category filtering -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="women">Women</button>
+      <button class="filter-btn" data-category="men">Men</button>
+      <button class="filter-btn" data-category="accessories">Accessories</button>
+      <button class="filter-btn" data-category="kids">Kids</button>
+    </div>
+
+    <!-- LOADING INDICATOR - Shows while filtering -->
+    <div class="loading" id="loading">Loading products...</div>
+
+    <!-- PRODUCT GRID - Dynamically populated products -->
+    <div id="product-list" class="product-grid">
+      <!-- Products loaded via script.js -->
+    </div>
+  </section>
+
+  <!-- ================================
+       FOOTER - Consistent footer
+  ================================ -->
+  <footer>
+    <div class="footer-links">
+      <div>
+        <h3>StyleHub</h3>
+        <p>Your trusted fashion destination for all styles. Quality products, affordable prices, and exceptional service.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: support@stylehub.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Mumbai, Maharashtra, India</p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 StyleHub. All rights reserved. Made with ❤️ in India</p>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Link to external JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

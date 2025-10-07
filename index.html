@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleHub - Modern Fashion Store</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================================
+       NAVIGATION BAR - Sticky header with cart badge
+  ================================ -->
+  <header class="navbar" id="navbar">
+    <h1 class="logo" onclick="window.location.href='index.html'">StyleHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html" class="cart-badge">
+        Cart 🛒
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ================================
+       HERO SECTION - Main banner with CTA
+  ================================ -->
+  <section class="hero" id="home">
+    <div class="hero-content fade-in-up">
+      <h2>Discover Your Style</h2>
+      <p>Trendy outfits, chic accessories, and premium fashion picks for everyone. Shop the latest collections with exclusive deals!</p>
+      <a href="products.html" class="btn">🛍️ Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ================================
+       CATEGORIES SECTION - Quick category navigation
+  ================================ -->
+  <section class="categories fade-in-up">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <!-- Each category card links to products page with filter -->
+      <div class="category-card" onclick="window.location.href='products.html?category=women'">
+        <span>👗 Women</span>
+      </div>
+      <div class="category-card" onclick="window.location.href='products.html?category=men'">
+        <span>👕 Men</span>
+      </div>
+      <div class="category-card" onclick="window.location.href='products.html?category=accessories'">
+        <span>🧢 Accessories</span>
+      </div>
+      <div class="category-card" onclick="window.location.href='products.html?category=kids'">
+        <span>👶 Kids</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       FEATURED PRODUCTS - Showcase top 3 products
+  ================================ -->
+  <section class="featured fade-in-up">
+    <h2>🔥 Featured Collections</h2>
+    <div class="product-grid" id="featuredProducts">
+      <!-- Products loaded dynamically via script.js -->
+    </div>
+  </section>
+
+  <!-- ================================
+       TESTIMONIALS - Customer reviews
+  ================================ -->
+  <section class="testimonials fade-in-up">
+    <h2>💬 What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>Amazing quality and fast delivery! Totally in love with my new dress. The fabric is premium and fits perfectly!</p>
+        <h4>– Priya Sharma</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>StyleHub never disappoints! The accessories are stylish and affordable. I've recommended it to all my friends.</p>
+        <h4>– Aarav Mehta</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>My go-to online store for kidswear. Great variety and value for money. The customer service is excellent too!</p>
+        <h4>– Neha Kulkarni</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       FOOTER - Site links and contact info
+  ================================ -->
+  <footer>
+    <div class="footer-links">
+      <div>
+        <h3>StyleHub</h3>
+        <p>Your trusted fashion destination for all styles. Quality products, affordable prices, and exceptional service.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: support@stylehub.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Mumbai, Maharashtra, India</p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 StyleHub. All rights reserved. Made with ❤️ in India</p>
+  </footer>
+
+  <!-- ================================
+       TOAST NOTIFICATION - Success/Error messages
+  ================================ -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Link to external JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

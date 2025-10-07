@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - StyleHub</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================================
+       NAVIGATION BAR
+  ================================ -->
+  <header class="navbar" id="navbar">
+    <h1 class="logo" onclick="window.location.href='index.html'">StyleHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html" class="cart-badge">
+        Cart 🛒
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ================================
+       CART SECTION - Shopping cart display
+  ================================ -->
+  <section class="cart-section">
+    <h2>🛒 Your Shopping Cart</h2>
+    
+    <!-- CART ITEMS CONTAINER - Populated dynamically -->
+    <div id="cart-items" class="cart-items-container">
+      <!-- Cart items loaded via cart.js -->
+    </div>
+    
+    <!-- CART SUMMARY - Total and action buttons -->
+    <div class="cart-summary" id="cartSummary" style="display: none;">
+      <h3 id="total-price"></h3>
+      <div class="cart-actions">
+        <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        <button class="clear-cart-btn" id="clear-cart">Clear Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       FOOTER
+  ================================ -->
+  <footer>
+    <div class="footer-links">
+      <div>
+        <h3>StyleHub</h3>
+        <p>Your trusted fashion destination for all styles. Quality products, affordable prices, and exceptional service.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: support@stylehub.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Mumbai, Maharashtra, India</p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 StyleHub. All rights reserved. Made with ❤️ in India</p>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Link to external JavaScript files -->
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+
+</body>
+</html>
